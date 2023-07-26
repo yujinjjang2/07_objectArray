@@ -82,7 +82,7 @@ public class MemberService {
 		
 		// memberArr 배열을 0 인덱스부터 끝까지 접근해서
 		// 참조하는 값이 null인 경우의 인덱스를 반환
-		for(int i=0; i<memberArr.length; i++) {
+		for(int i = 0; i < memberArr.length; i++) {
 			if(memberArr[i] == null) {
 				return i; // 현재 메서드를 종료하고 호출한곳으로 i 값 가지고 돌아감
 			}
@@ -185,7 +185,7 @@ public class MemberService {
 			
 			return "아이디 또는 비밀번호가 일치하지 않습니다.";
 			
-		}else { // 로그인 성공
+		} else { // 로그인 성공
 			
 			return loginMember.getMemberName() + "님 환영합니다.";
 			
@@ -205,7 +205,7 @@ public class MemberService {
 		boolean flag = true; // 검색 결과 신호용 변수
 		
 		// 1) memberArr 배열의 모든 요소 순차 접근
-		for(int i=0; i < memberArr.length; i++) {
+		for(int i = 0; i < memberArr.length; i++) {
 			
 			// 2) memberArr[i] 요소가 null인 경우 반복 종료
 			if(memberArr[i] == null) {
