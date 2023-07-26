@@ -162,7 +162,7 @@ public class MemberService {
 		
 		// 1) memberArr 배열 내 요소를 순서대로 접근하여 null이 아닌지 확인
 		for(int i = 0; i < memberArr.length; i++) {
-			
+
 			if(memberArr[i] != null) { // 회원정보가 있을 경우
 				
 				// 2) 회원 정보(memberArr[i])의 아이디, 비밀번호와
@@ -227,7 +227,7 @@ public class MemberService {
 		
 		
 		
-		if(flag) {
+		if(flag == true) {
 			System.out.println("일치하는 검색 결과가 없습니다.");
 		}
 	}
